@@ -296,3 +296,27 @@ The script automatically detects and uses GPU if available. To force CPU usage, 
 ## License
 
 This project is for educational and research purposes. 
+
+## 🚀 Deployment
+
+### Quick Deploy to Render
+1. **Fork this repository** or **import from GitHub** in Render
+2. **Service Type**: Web Service
+3. **Runtime**: Python 3
+4. **Build Command**: `pip install -r requirements.txt`
+5. **Start Command**: `gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120`
+
+## 📁 Dataset
+
+> **Note**: For development and training purposes, rice leaf disease images should be organized in the following directory structure locally:
+
+```
+📁 Project Root/
+├── 📁 Healthy/          # Healthy rice leaf images
+├── 📁 Brownspot/        # Brown spot disease images  
+├── 📁 Bacterialblight/  # Bacterial blight disease images
+├── 📁 Leafsmut/         # Leaf smut disease images
+└── 📄 app.py           # Main application
+```
+
+**Important**: The dataset directories are excluded from Git via `.gitignore` to keep the repository size manageable for deployment. They're only needed locally for training and testing. 
