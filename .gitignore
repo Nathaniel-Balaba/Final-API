@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch models (keep best_model.pth for deployment)
+*.pth
+!best_model.pth
+*.pt
+
+# Dataset directories
+Healthy/
+Brownspot/
+Bacterialblight/
+Leafsmut/
+train_data/
+val_data/
+test_data/
+data/
+dataset/
+
+# Training artifacts
+confusion_matrix.png
+training_history.png
+training_plots/
+checkpoints/
+logs/
+
+# Runtime files
+prediction_logs.jsonl
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local test files
+test_images/
+sample_images/ 
